@@ -13,9 +13,9 @@ const Navbar = (props) => {
     return (
         <div className="header">
 
-            <a href="#" className='sidenav-trigger hide-on-med-and-up' data-target='mobile-nav'>
-                <i class="material-icons">menu</i>
-            </a>
+            <button href="#" className='sidenav-trigger hide-on-med-and-up' data-target='mobile-nav'>
+                <i className="material-icons">menu</i>
+            </button>
             <nav className="container" >
                 <h6 className='hide-on-med-and-up'>
                     منظمة الأسرة العربية
@@ -28,7 +28,17 @@ const Navbar = (props) => {
                     <Link to='/' className="nav-item">الفعاليات</Link>
                     <Link to='/' className="nav-item">العضوية</Link>
                     <Link to='/' className="nav-item">مجلس سفراء الأسرة العربية</Link>
+                    {/* <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
 
+
+                    <ul id='dropdown1' className='dropdown-content'>
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li className="divider" tabindex="-1"></li>
+                        <li><a href="#!">three</a></li>
+                        <li><a href="#!"><i className="material-icons">view_module</i>four</a></li>
+                        <li><a href="#!"><i className="material-icons">cloud</i>five</a></li>
+                    </ul> */}
                 </ul>
 
             </nav>

@@ -1,10 +1,11 @@
+
 .header{
   background-repeat: repeat;
   background-size: auto;
   background-attachment: scroll;
   background-position: initial;
   background-image: none;
-  background-color: #00468b;
+  background-color:transparent;
   max-height: 100px;  
   display: flex;
 
@@ -39,9 +40,9 @@ position: absolute;
     padding: 0;
   }
 
-  .container {
+  nav.container {
     width: 100%;
-    background-color: transparent !important;
+    background-color:  #00468b;
     padding-right: 20px;
     justify-content: space-between;
     align-items: right;
