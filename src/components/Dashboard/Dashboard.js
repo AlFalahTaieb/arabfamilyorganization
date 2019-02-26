@@ -6,7 +6,7 @@ import family4 from '../../images/family4.jpg'
 import family6 from '../../images/family6.png'
 import family7 from '../../images/family7.png'
 import './Dashboard.css'
-import Footer from '../Layout/Footer'
+
 
 class Dashboard extends Component {
     _isMounted = false
@@ -95,7 +95,6 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </section>
-<Footer/>
             </div>
 
         )
