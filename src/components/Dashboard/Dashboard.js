@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import family1 from '../../images/family1.jpg'
+import family1 from '../../images/family1.png'
 import family5 from '../../images/family5.png'
-import family3 from '../../images/family3.jpg'
-import family4 from '../../images/family4.jpg'
-import family6 from '../../images/family6.png'
+import family3 from '../../images/family3.png'
+import family4 from '../../images/family4.png'
+import family2 from '../../images/family2.png'
 import family7 from '../../images/family7.png'
 import './Dashboard.css'
 
@@ -52,7 +52,7 @@ class Dashboard extends Component {
                     <h1 className="title">{heading}</h1>
                     <div class="row">
                         <div class="col s12 l4 hide-on-med-and-down">
-                            <img src={family1} alt="" class="responsive-img materialboxed" />
+                            <img src={family5} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf1}</h5>
@@ -69,7 +69,7 @@ class Dashboard extends Component {
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family4} alt="" class="responsive-img materialboxed" />
+                            <img src={family2} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf3}</h5>
@@ -79,7 +79,7 @@ class Dashboard extends Component {
                    
                     <div class="row">
                         <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family5} alt="" class="responsive-img materialboxed" />
+                            <img src={family4} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1 pull-l5 right-align">
                             <h5 class="indigo-text text-darken-4">{hadf4}</h5>
@@ -87,12 +87,13 @@ class Dashboard extends Component {
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family7} alt="" class="responsive-img materialboxed" />
+                            <img src={family1} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf3}</h5>
    
                         </div>
+                        
                     </div>
                 </section>
             </div>
