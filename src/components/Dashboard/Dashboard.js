@@ -45,6 +45,11 @@ class Dashboard extends Component {
 
                 <section class="container section" id="photos">
                     <h1 className="title">{heading}</h1>
+                    <div class="container section" className='s12 m4 l8'>
+                            <p>{text1}</p>
+
+                        </div>
+                        <br/>
                     <div class="row">
                         <div class="col s12 l4 hide-on-med-and-down">
                             <img src={this.state.charity} alt="" class="responsive-img materialboxed" />
@@ -55,10 +60,10 @@ class Dashboard extends Component {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s12 l4 offset-l1 push-l7">
+                    <div class="col s12 l4 hide-on-med-and-down">
                             <img src={this.state.family} alt="" class="responsive-img materialboxed" />
                         </div>
-                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                        <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{text3}</h5>
                         </div>
                     </div>
@@ -73,10 +78,10 @@ class Dashboard extends Component {
                     </div>
 
                     <div class="row">
-                        <div class="col s12 l4 offset-l1 push-l7">
+                    <div class="col s12 l4">
                             <img src={this.state.teacher} alt="" class="responsive-img materialboxed" />
                         </div>
-                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                        <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{text5}</h5>
                         </div>
                     </div>
@@ -88,14 +93,7 @@ class Dashboard extends Component {
                             <h5 class="indigo-text text-darken-4">{text6}</h5>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={this.state.teacher} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                            {/* <h5 class="indigo-text text-darken-4">{text6}</h5> */}
-                        </div>
-                    </div>
+                
                 </section>
             </div>
 

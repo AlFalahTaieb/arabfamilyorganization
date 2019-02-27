@@ -24,16 +24,22 @@ const Navbar = (props) => {
 
                 <ul className="nav-links hide-on-small-only" >
 
-                    <li> <Link to='/page1' className="nav-item">الصفحة الرئيسية</Link></li>
+                    <li> <Link to='/' className="nav-item">الصفحة الرئيسية</Link></li>
                     <Link to='/' className="nav-item">حول المنظمة</Link>
                     <Link to='/' className="nav-item">منظمة الأسرة العربية</Link>
                     <Link to='/' className="nav-item">الفعاليات</Link>
-                    <Link to='/' className="nav-item">العضوية</Link>
                     <Link to='/page4' className="nav-item">اهدافها</Link>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>العضوية</a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li> <Link to='/page1' className="nav-item">حول العضوية </Link></li>
+                        <li> <Link to='/page2' className="nav-item">الاشتراك / عضوية المنظمة</Link></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><Link to='/page3' className='nav-item'>  رسوم الاشتراك السنوي</Link></li>
+                        <li><Link to='/page3' className='nav-item'> رقم حساب المنظمة</Link></li>
+                        <li><Link to='/page3' className='nav-item'> استمارة العضوية</Link></li>
+                    </ul>
 
-                    <Link to='/' className="nav-item">مجلس سفراء الأسرة العربية</Link>
 
-                    
                     {/* DROPDOWN LISTTTTTTTTTTTTTTTTT */}
                     <a class='dropdown-trigger' href='#' data-target='dropdown1'>أخبار المنظمة </a>
                     <ul id='dropdown1' class='dropdown-content'>
@@ -41,11 +47,6 @@ const Navbar = (props) => {
                         <li> <Link to='/page2' className="nav-item">يوم المرأة الامارتية</Link></li>
                         <li class="divider" tabindex="-1"></li>
                         <li><Link to='/page3' className='nav-item'>  تفاهم بين جامعة الشارقة ومنظمة الأسرة العربية</Link></li>
-                        {/* <li><a href="#!">two</a></li>
-                       
-                        <li><a href="#!">three</a></li>
-                        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li> */}
                     </ul>
 
                 </ul>
