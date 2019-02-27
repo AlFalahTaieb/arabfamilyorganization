@@ -8,10 +8,7 @@ background-size: cover;
 .carousel1 img{
     max-width: 50em;
     max-height: 30em;
-    /* max-height: 100%;
-    max-width: 100%; */
 
-/* object-fit: contain; */
 }
 
 p{
@@ -19,9 +16,13 @@ p{
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 773px) {
 
     body,p{ 
-        font-size: 100%
+        font-size: 100%;
+    }
+    .carousel1 img{
+        max-width: 80%;
+       max-height:100%;
     }
 }

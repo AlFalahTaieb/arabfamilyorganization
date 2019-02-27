@@ -4,13 +4,18 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-
-import Dashboard from './components/Dashboard/Dashboard'
-import Page1 from './components/Pages/Page1'
 import Layout from './components/Layout/Layout'
 
+
+/*PAGE IMPORT */
+import Page1 from './components/Pages/Page1/Page1'
+import Page2 from './components/Pages/Page2/Page2'
+import Page3 from './components/Pages/Page3/Page3'
+import Dashboard from './components/Dashboard/Dashboard'
+
+/**END OF PAGE IMPORT */
 class App extends Component {
-  
+
   render() {
     return (
 
@@ -18,9 +23,11 @@ class App extends Component {
         <div className="App">
 
           <Layout>
-            
-              <Route exact path="/" component={Dashboard} />
-              <Route exact path="/Page1" component={Page1} />
+
+            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/Page1" component={Page1} />
+            <Route exact path="/Page2" component={Page2} />
+            <Route exact path="/Page3" component={Page3} />
           </Layout>
         </div>
 
