@@ -39,15 +39,6 @@ class Page3 extends Component {
                     <h1>{heading} </h1>
                     <section className="container section" >
 
-                        {/* <div className='col s6 offset-s6' class='carousel1 taieb'>
-                            <a  className='carousel-item'>
-                                <img src={this.state.family1} alt='' />
-                            </a>
-                        
-
-
-                        </div> */}
-
                         <div class="container section" className='s12 m4 l8'>
                             <p>{text}</p>
 

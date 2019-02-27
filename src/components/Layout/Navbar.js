@@ -29,7 +29,11 @@ const Navbar = (props) => {
                     <Link to='/' className="nav-item">منظمة الأسرة العربية</Link>
                     <Link to='/' className="nav-item">الفعاليات</Link>
                     <Link to='/' className="nav-item">العضوية</Link>
+                    <Link to='/' className="nav-item">اهدافها</Link>
+
                     <Link to='/' className="nav-item">مجلس سفراء الأسرة العربية</Link>
+
+                    
                     {/* DROPDOWN LISTTTTTTTTTTTTTTTTT */}
                     <a class='dropdown-trigger' href='#' data-target='dropdown1'>أخبار المنظمة </a>
                     <ul id='dropdown1' class='dropdown-content'>
