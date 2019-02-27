@@ -29,7 +29,7 @@ const Navbar = (props) => {
                     <Link to='/' className="nav-item">منظمة الأسرة العربية</Link>
                     <Link to='/' className="nav-item">الفعاليات</Link>
                     <Link to='/' className="nav-item">العضوية</Link>
-                    <Link to='/' className="nav-item">اهدافها</Link>
+                    <Link to='/page4' className="nav-item">اهدافها</Link>
 
                     <Link to='/' className="nav-item">مجلس سفراء الأسرة العربية</Link>
 

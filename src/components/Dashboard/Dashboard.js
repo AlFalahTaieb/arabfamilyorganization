@@ -1,22 +1,43 @@
 import React, { Component } from 'react'
-import family1 from '../../images/family1.png'
-import family5 from '../../images/family5.png'
-import family3 from '../../images/family3.png'
-import family4 from '../../images/family4.png'
-import family2 from '../../images/family2.png'
+
 
 
 
 class Dashboard extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            charity: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/charity.png',
+            family: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/family.png',
+            help: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/help.png',
+            teacher: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/teacher.png',
+            loving: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/loving.png',
+            friendship: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551292933/Dashboard/friendship.png',
+        }
 
+    }
 
     render() {
-        let heading = ' اهدافها'
-        let hadf1 = 'رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافية'
-        let hadf2 = 'العمل على تطوير تبني استراتيجيات وسياسات أسرية في الدول العربية وفقاً لمتطلبات النمو والظروف الخاصة بكل منها وفي إطار الوحدة العربية'
-        let hadf3 = 'تأكيد مكانة الأسرة العربية ودورها الوطني والتنموي ، وتعزيز قدراتها في التعبير عن ذاتيتها'
-        let hadf4 = ' تمثيل الأسرة العربية في المؤسسات والمحافل الإقليمية والدولية والعمل على تأكيد حقوقها والتعبير عن مصالحها واحتياجاتها وآمالها'
-        let hadf5 = '  تدعيم الصلات والتعاون بين الأسر في العالم ، والحث على قيامها بمسؤولياتها الجماعية في العدالة والسلم والتضامن.'
+        let heading = ' الصفحة الرئيسية'
+        let text1 = `تكونت منظمة الاسرة العربية بارادة المؤسسات الحكومية وغير الحكومية المعترف بها والتي تعمل لرعاية الاسر والنهوض بها في الوطن العربي.
+        وقد شاركت في تأسيسها اغلبية الدول العربية وهي (الاردن – تونس- الجزائر- المملكة العربية السعودية – العراق – فلسطين – الصومال – ليبيا – لبنان – مصر – المغرب – موريتانيا)
+        
+        ورحبت بذلك وباركته كل من الاقطار التالية (الكويت – سلطنة عمان – قطر – السودان – سوريا).
+        
+        ثم شاركت في انشطتها كل من (البحرين – اليمن) تاكيداً لمساندتها للمنظمة.
+        
+        واعترفت بها جامعة الدول العربية واصدر مجلس الجامعة في شأنها القرار رقم 3782 بتاريخ 14سبتمبر1978م، والذي أكد فيه ايضاً على ضرورة التعاون والتنسيق والاشتراك في اجتماعات واعمال المنظمة ، كما دعت الدول العربية الى المبادرة بالانضمام اليها ، وفي هذا الموقف دعم صريح للمنظمة وتثمين لدورها الهام في خدمة كل اسرة عربية وتعزيز قدرات الامة على مواجهة تحديات الحداثة والتطور.
+ 
+        كما اعترفت بها الحكومة التونسية بالتاشيرة رقم 4488 بتاريخ 6 مارس 1978م.  
+        وتتمتع المنظمة بالحق في التمثيل لدى الامم المتحدة ووكالاتها المتخصصة، ولدى الاتحاد الدولي للمؤسسات العائلية والمنظمات الدولية الاخرى التي تتفق اهدافها واهداف الامة العربية.  
+        إن الرسالة التي التزمت المنظمة بتحقيقها تتصل وثيق الاتصال بآمال الامة العربية في مزيد من التلاحم والتضامن والعمل المشترك ، وقد حرصت على ابراز ذلك في الاهداف التي رسمتها لنفسها والتي تنص على:`
+
+        let text2 = ` رعاية الأسرة العربية والنهوض بها حتى تتمكن من القيام بوظائفها التربوية والاجتماعية والثقافية والاقتصادية.`
+        let text3 = ` ايجاد سياسة عائلية حسب متطلبات النمو لكل قطر عربي وفي اطار الوحدة العربية.`
+        let text4 = ` تأكيد مكانة الأسرة العربية والتعبير عن ذاتيتها.`
+        let text5 = `تمثيل الأسرة وابراز حقوقها ومصالحها وحاجياتها وآمالها لدى المؤسسات القومية والدولية.`
+        let text6 = `تدعيم صلة التعاون بين الأسر `
+ 
         return (
 
 
@@ -26,48 +47,54 @@ class Dashboard extends Component {
                     <h1 className="title">{heading}</h1>
                     <div class="row">
                         <div class="col s12 l4 hide-on-med-and-down">
-                            <img src={family5} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.charity} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf1}</h5>
-   
+                            <h5 class="indigo-text text-darken-4">{text2}</h5>
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family3} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.family} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                            <h5 class="indigo-text text-darken-4">{hadf2}</h5>
+                            <h5 class="indigo-text text-darken-4">{text3}</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family2} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.help} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf3}</h5>
-   
+                            <h5 class="indigo-text text-darken-4">{text4}</h5>
+
                         </div>
                     </div>
-                   
+
                     <div class="row">
                         <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family4} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.teacher} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                            <h5 class="indigo-text text-darken-4">{hadf4}</h5>
+                            <h5 class="indigo-text text-darken-4">{text5}</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family1} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.friendship} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf5}</h5>
-   
+                            <h5 class="indigo-text text-darken-4">{text6}</h5>
                         </div>
-                        
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l4 offset-l1 push-l7">
+                            <img src={this.state.teacher} alt="" class="responsive-img materialboxed" />
+                        </div>
+                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                            {/* <h5 class="indigo-text text-darken-4">{text6}</h5> */}
+                        </div>
                     </div>
                 </section>
             </div>
