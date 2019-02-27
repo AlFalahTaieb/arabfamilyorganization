@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 
 import './Navbar.css'
 import logo from '../../images/arabfamily.jpg'
@@ -22,7 +22,7 @@ const Navbar = (props) => {
             </h6>
                 <ul className="nav-links hide-on-small-only" >
 
-                    <Link to='/' className="nav-item">الصفحة الرئيسية</Link>
+                   <li> <Link to='/page1' className="nav-item">الصفحة الرئيسية</Link></li>
                     <Link to='/' className="nav-item">حول المنظمة</Link>
                     <Link to='/' className="nav-item">منظمة الأسرة العربية</Link>
                     <Link to='/' className="nav-item">الفعاليات</Link>
@@ -44,7 +44,7 @@ const Navbar = (props) => {
             </nav>
 
             <ul className="sidenav" id='mobile-nav'>
-                <li to='/' className="nav-item">الصفحة الرئيسية</li>
+                <li to='/page1' className="nav-item">الصفحة الرئيسية</li>
                 <li to='/' className="nav-item">حول المنظمة</li>
                 <li to='/' className="nav-item">منظمة الأسرة العربية</li>
                 <li to='/' className="nav-item">الفعاليات</li>
@@ -52,8 +52,8 @@ const Navbar = (props) => {
                 <li to='/' className="nav-item">مجلس سفراء الأسرة العربية</li>
 
             </ul>
-            <a class="logo hide-on-med-and-down">
-                <img src={logo} className='logo' />
+            <a className="logo hide-on-med-and-down">
+                <img src={logo} alt='logo' className='logo' />
             </a>
         </div>
     )

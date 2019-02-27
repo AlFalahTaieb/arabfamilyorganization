@@ -1,0 +1,27 @@
+.carousel1{
+max-width: 50em;
+max-height: 30em;
+float:right;
+background-size: cover; 
+
+}
+.carousel1 img{
+    max-width: 50em;
+    max-height: 30em;
+    /* max-height: 100%;
+    max-width: 100%; */
+
+/* object-fit: contain; */
+}
+
+p{
+    font-size: 150%
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    body,p{ 
+        font-size: 100%
+    }
+}

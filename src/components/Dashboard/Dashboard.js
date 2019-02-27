@@ -4,24 +4,10 @@ import family5 from '../../images/family5.png'
 import family3 from '../../images/family3.png'
 import family4 from '../../images/family4.png'
 import family2 from '../../images/family2.png'
-import family7 from '../../images/family7.png'
-import './Dashboard.css'
+
 
 
 class Dashboard extends Component {
-    _isMounted = false
-    constructor(props) {
-        super(props)
-
-    }
-
-
-
-
-    async componentDidMount() {
-        this._isMounted = true
-    }
-
 
 
     render() {
@@ -35,18 +21,6 @@ class Dashboard extends Component {
 
 
             <div>
-                {/* <section className="hero">
-                    <section className="hero-body">
-                        <div className="container">
-                            <h1 className="title">{ heading }</h1>
-                            <div className='is-two-thirds column is-paddingless'>
-                                <h2 className='subtitle is-4'> { subHeading } </h2>
-                            </div>
-                            <a className='button is-primary' id ='Learn'>LearnMore</a>
-                        </div>
-
-                    </section>
-                </section> */}
 
                 <section class="container section" id="photos">
                     <h1 className="title">{heading}</h1>
@@ -90,7 +64,7 @@ class Dashboard extends Component {
                             <img src={family1} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf3}</h5>
+                            <h5 class="indigo-text text-darken-4">{hadf5}</h5>
    
                         </div>
                         

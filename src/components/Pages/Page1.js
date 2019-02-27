@@ -1,101 +1,131 @@
 import React, { Component } from 'react'
-import family1 from '../../images/family1.png'
-import family5 from '../../images/family5.png'
-import family3 from '../../images/family3.png'
-import family4 from '../../images/family4.png'
-import family2 from '../../images/family2.png'
-
+import Siema from 'siema'
+import './Page1.css'
 
 
 class Page1 extends Component {
-    _isMounted = false
+
     constructor(props) {
+
+
         super(props)
+        this.state = {
+            family1: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family1.jpg',
+            family2: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family2.jpg',
+            family3: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family3.jpg',
+            family4: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family4.jpg',
+            family5: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family5.jpg',
+            family6: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family6.jpg',
+            family7: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family7.jpg',
+            family8: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family8.jpg',
+            family9: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family9.jpg',
+            family10: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family10.jpg',
+            family11: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family11.jpg',
+            family12: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family12.jpg',
+        }
+
 
     }
+      // setInterval(() => {
+        //     carousel.next()
+        // }, 3000)
 
-
-
-
-    async componentDidMount() {
-        this._isMounted = true
+    componentDidMount() {
+       const carousel = new Siema({
+            selector: '.taieb',
+            easing: 'cubic-bezier(.17,.67,.32,1.34)',
+            perPage: 1,
+            duration: 1500,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: true,
+            rtl: true,
+        })
+        setInterval(() => {
+            carousel.next()
+        }, 5000)
     }
-
-
 
     render() {
         let heading = 'صور فعالية عرس زايد العربي'
-        let hadf1 = 'رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافية'
-        let hadf2 = 'العمل على تطوير تبني استراتيجيات وسياسات أسرية في الدول العربية وفقاً لمتطلبات النمو والظروف الخاصة بكل منها وفي إطار الوحدة العربية'
-        let hadf3 = 'تأكيد مكانة الأسرة العربية ودورها الوطني والتنموي ، وتعزيز قدراتها في التعبير عن ذاتيتها'
-        let hadf4 = ' تمثيل الأسرة العربية في المؤسسات والمحافل الإقليمية والدولية والعمل على تأكيد حقوقها والتعبير عن مصالحها واحتياجاتها وآمالها'
-        let hadf5 = '  تدعيم الصلات والتعاون بين الأسر في العالم ، والحث على قيامها بمسؤولياتها الجماعية في العدالة والسلم والتضامن.'
+        let hadf1 = 'رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافيةشهد معالي الشيخ سعيد بن طحنون آل نهيان «عرس زايد العربي الجماعي الأول»، والذي نظمته «منظمة الأسرة العربية»، مساء أمس -السبت- في مركز «إكسبو الشارقة»، بمشاركة 500 عريس وعروس، من أبناء الدول العربية المقيمين على أرض دولة الإمارات العربية المتحدة، والذي يأتي تزامناً مع «عام زايد 2018»، ومئوية الأب المؤسس. كما حضر الحفل الشيخ محمد بن حميد القاسمي، مدير دائرة الإحصاء والتنمية المجتمعية بالشارقة، والدكتور ماجد سعيد النعيمي، رئيس الديوان الأميري بعجمان، وسيف بن محمد المدفع، الرئيس التنفيذي لمركز «إكسبو الشارقة»، ورجل الأعمال عبد الرحيم الزرعوني، وجمال عبيد البح رئيس منظمة الأسرة العربية، وعدد من رجال السلك الدبلوماسي والشخصيات العربية، والفنانين. وشارك في العرس عرسان يمثلون عدداً من البلدان العربية من: مصر، الأردن، فلسطين، اليمن، السودان، جزر القمر، الجزائر، المغرب، ليبيا، العراق، سلطنة عمان، سوريا، بالإضافة لعدد من العرسان من باكستان، وإيران وثلاثة من المواطنين من الإمارات العربية المتحدة. وأكد جمال البح، في كلمة بالعرس، أن «عرس زايد العربي الأول» يمثل علامة مضيئة في سجلات الترابط الأسري، ويؤكد على السلام والتآخي بين الشعوب العربية والصديقة.'
+
         return (
 
 
             <div>
-                {/* <section className="hero">
-                    <section className="hero-body">
-                        <div className="container">
-                            <h1 className="title">{ heading }</h1>
-                            <div className='is-two-thirds column is-paddingless'>
-                                <h2 className='subtitle is-4'> { subHeading } </h2>
-                            </div>
-                            <a className='button is-primary' id ='Learn'>LearnMore</a>
+                <div class="row">
+                    <h1>{heading} </h1>
+                    <section className="container section" >
+
+                        <div className='col s6 offset-s6' class='carousel1 taieb'>
+                            <a href="#one!" className='carousel-item'>
+                                <img src={this.state.family1} alt='' />
+                            </a>
+                            <a href="#two!" className='carousel-item'>
+                                <img src={this.state.family2} alt='' />
+
+                            </a>
+                            <a href="#three!" className='carousel-item'>
+
+                                <img src={this.state.family3} alt='' />
+                            </a>
+                            <a href="#four!" className='carousel-item'>
+
+                                <img src={this.state.family4} alt='' />
+                            </a>
+                            <a href="#five!" className='carousel-item'>
+
+                                <img src={this.state.family5} alt='' />
+                            </a>
+                            <a href="#six!" className='carousel-item'>
+
+                                <img src={this.state.family6} alt='' />
+                            </a>
+                            <a href="#seven!" className='carousel-item'>
+
+                                <img src={this.state.family7} alt='' />
+                            </a>
+                            <a href="#eight!" className='carousel-item'>
+
+                                <img src={this.state.family8} alt='' />
+                            </a>
+                            <a href="#nine!" className='carousel-item'>
+
+                                <img src={this.state.family9} alt='' />
+                            </a>
+                            <a href="#ten!" className='carousel-item'>
+
+                                <img src={this.state.family10} alt='' />
+                            </a>
+                            <a href="#twelve!" className='carousel-item'>
+
+                                <img src={this.state.family11} alt='' />
+                            </a>
+                            <a href="#eleven!" className='carousel-item'>
+
+                                <img src={this.state.family12} alt='' />
+                            </a>
+
+
                         </div>
 
+                        <div class="container section" className='s12 m4 l8'>
+                            <p>{hadf1}</p>
+
+                        </div>
                     </section>
-                </section> */}
 
-                <section class="container section" id="photos">
-                    <h1 className="title">{heading}</h1>
-                    <div class="row">
-                        <div class="col s12 l4 hide-on-med-and-down">
-                            <img src={family5} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf1}</h5>
-   
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family3} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                            <h5 class="indigo-text text-darken-4">{hadf2}</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 l4">
-                            <img src={family2} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf3}</h5>
-   
-                        </div>
-                    </div>
-                   
-                    <div class="row">
-                        <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family4} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                            <h5 class="indigo-text text-darken-4">{hadf4}</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 l4">
-                            <img src={family1} alt="" class="responsive-img materialboxed" />
-                        </div>
-                        <div class="col s12 l6 offset-l1">
-                            <h5 class="indigo-text text-darken-4">{hadf3}</h5>
-   
-                        </div>
-                        
-                    </div>
-                </section>
+
+
+                </div>
+
             </div>
+
+
+
 
         )
     }

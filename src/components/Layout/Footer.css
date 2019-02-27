@@ -16,7 +16,7 @@ body {
    text-align:inherit;
    display: inline-block;
    margin:0;
-   vertical-align:top;
+   vertical-align:top !important;
 }
 
   @media only screen and (max-width: 320px) {

@@ -20,6 +20,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+  <!--GLIDE INIT-->
+  <!-- Required Core Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+  <!-- Optional Theme Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <!--INIT GLID-->
+
+  
   <title>arabfamilyorganization</title>
   <style>
     a {
@@ -36,12 +50,34 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="taieb"></div>
   <script>
+
+    //Mobile
     $(document).ready(function () {
       $('.sidenav').sidenav();
     })
+    //Dropdown
 
-    
     $('.dropdown-trigger').dropdown();
+
+    // Caroussel
+/*
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+    });
+   
+    $(document).ready(function () {
+      $('.slider').slider({ full_width: true });
+    });
+    $('.carousel-slider').slider({ full_width: true });
+
+*/
+
+$(document).ready(function(){
+  $('.carousel.carousel-slider').carousel({ fullWidth: true});
+});
+$(document).ready(function () {
+      $('.carousel').carousel({ fullWidth: true});
+    });
 
   </script>
 </body>
