@@ -7,11 +7,7 @@ class Page5 extends Component {
 
 
     constructor(props) {
-
-
         super(props)
-        console.log(this.props)
-
         this.state = {
             register: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551306661/Dashboard/clipboard.png',
         }
@@ -60,7 +56,6 @@ class Page5 extends Component {
         let li9 = `300 دولار امركي للافراد.`
         let text3 = `الرجاء اتباع التعليمات الموجودة في استمارة التسجيل. نسخة من استمارة العضوية:`
         let text4 = `الرجاء اتباع التعليمات الموجودة في استمارة التسجيل. نسخة من استمارة العضوية: `
-        let text5 = ``
         return (
 
 

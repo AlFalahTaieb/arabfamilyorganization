@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import M from "materialize-css/dist/js/materialize.min.js";
 import './Navbar.css'
 import logo from '../../images/arabfamily.jpg'

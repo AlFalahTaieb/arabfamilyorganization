@@ -51,7 +51,7 @@ const Footer = (props) => {
                                 <li><a className="grey-text text-lighten-3" href="#!">بيانات صحفية</a></li>
                            
                             </ul>
-                            <p className="grey-text text-darrken-4">جميع الحقوق محفوظة © 2019  منظمة الأسرة العربية</p>
+                            <p className="grey-text text-darrken-4">جميع الحقوق محفوظة  2019  منظمة الأسرة العربية</p>
                         </div>
                     </div>
                 </div>
