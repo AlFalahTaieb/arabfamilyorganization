@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-import family1 from '../../../images/family1.png'
-import family5 from '../../../images/family5.png'
-import family3 from '../../../images/family3.png'
-import family4 from '../../../images/family4.png'
-import family2 from '../../../images/family2.png'
+
 
 
 
 class Page4 extends Component {
-
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            fam1: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338567/Goals/family1.png',
+            fam2: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338567/Goals/family2.png',
+            fam3: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338567/Goals/family3.png',
+            fam4: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338567/Goals/family4.png',
+            fam5: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338567/Goals/family5.png',
+        }
+    }
     render() {
         let heading = ' اهدافها'
         let hadf1 = 'رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافية'
@@ -25,8 +29,8 @@ class Page4 extends Component {
                 <section class="container section" id="photos">
                     <h1 className="title">{heading}</h1>
                     <div class="row">
-                        <div class="col s12 l4 hide-on-med-and-down">
-                            <img src={family5} alt="" class="responsive-img materialboxed" />
+                        <div class="col s12 l4">
+                            <img src={this.state.fam5} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf1}</h5>
@@ -35,7 +39,7 @@ class Page4 extends Component {
                     </div>
                     <div class="row">
                         <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family3} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.fam3} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1 pull-l5 right-align">
                             <h5 class="indigo-text text-darken-4">{hadf2}</h5>
@@ -43,7 +47,7 @@ class Page4 extends Component {
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family2} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.fam2} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf3}</h5>
@@ -53,7 +57,7 @@ class Page4 extends Component {
                    
                     <div class="row">
                         <div class="col s12 l4 offset-l1 push-l7">
-                            <img src={family4} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.fam4} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1 pull-l5 right-align">
                             <h5 class="indigo-text text-darken-4">{hadf4}</h5>
@@ -61,7 +65,7 @@ class Page4 extends Component {
                     </div>
                     <div class="row">
                         <div class="col s12 l4">
-                            <img src={family1} alt="" class="responsive-img materialboxed" />
+                            <img src={this.state.fam1} alt="" class="responsive-img materialboxed" />
                         </div>
                         <div class="col s12 l6 offset-l1">
                             <h5 class="indigo-text text-darken-4">{hadf5}</h5>

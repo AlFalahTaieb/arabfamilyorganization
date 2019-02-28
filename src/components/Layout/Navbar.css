@@ -20,6 +20,16 @@
 display:inline-block;
 
 }
+.logop{
+  max-width: 20%;
+  max-height: 27%;
+  /* position: fixed; */
+  /* margin-top: -20px; */
+  float:left !important;
+/* margin-bottom:100px; */
+
+/* display:inline-block; */
+}
 h6 {
 position: absolute;
   float:left;

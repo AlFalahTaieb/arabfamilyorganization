@@ -2,13 +2,22 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import M from "materialize-css/dist/js/materialize.min.js";
 import './Navbar.css'
-import logo from '../../images/arabfamily.jpg'
 
 
 
 
 class Navbar extends Component {
+constructor(props){
+    super(props)
+       this.state={
 
+        logo:'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551338569/Goals/arabfamily.jpg',
+        logopetit:'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551342697/Goals/AFO.png'
+
+}
+}
+
+ 
     componentDidMount() {
 
         var elems1 = document.querySelectorAll('.sidenav');
@@ -29,8 +38,10 @@ class Navbar extends Component {
                 </button>
                 <nav className="container" >
                     <h4 className='hide-on-med-and-up'>
+                    <img class='logop' alt='' src={this.state.logopetit} />
                         منظمة الأسرة العربية
             </h4>
+            
 
                     <ul className="nav-links hide-on-small-only" >
 
@@ -76,10 +87,11 @@ class Navbar extends Component {
 
                 </ul>
                 <a className="logo hide-on-med-and-down">
-                    <img src={logo} alt='logo' className='logo' />
+                    <img src={this.state.logo} alt='logo' className='logo' />
                 </a>
             </div>
         )
     }
 }
 export default Navbar
+
