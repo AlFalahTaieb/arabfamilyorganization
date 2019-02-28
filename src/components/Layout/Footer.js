@@ -25,11 +25,11 @@ const Footer = (props) => {
 
                             <li><a className="grey-text text-lighten-3" href="#!">تويتر</a> <a className="fab fa-twitter"></a></li> */}
 
-                                <li><a href='#' className='btn-floating btn-small indigo darken-4'>
+                                <li><a href='https://twitter.com/arabfamilyorg?lang=en' className='btn-floating btn-small indigo darken-4'>
                                     <i className='fab fa-twitter'></i>
                                 </a></li>
 
-                                <li><a href='#' className='btn-floating btn-small indigo darken-4'>
+                                <li><a href='https://www.facebook.com/arabfamilyorganization.ae/' className='btn-floating btn-small indigo darken-4'>
                                     <i className='fab fa-facebook-f'></i>
                                 </a></li>
                                 <li><a className="grey-text text-lighten-3" href={"tel:" + "0097165561444"}>اتصل الان</a> ☎️</li>
@@ -56,42 +56,10 @@ const Footer = (props) => {
                     </div>
                 </div>
 
-                {/* <div className="container">
-                    <div className="footer-copyright">
-
-                    </div>
-                </div> */}
+       
             </footer>
         </main>
     )
 }
 
 export default Footer
-/*
-  <footer className="page-footer blue darken-4">
-            <div className="container">
-                <div className="row">
-                    <div className="col s12 16">
-                        <h5>TEST ME</h5>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-                        <p>YOLOYLYOYLYLYKLKfsjkdlfkldsjsfkldjjjjjjjjjjjjjjjjjjjjjjjjjjjjsklfdjklsfjdklfjsdklsjfd</p>
-
-                    </div>
-                    <div className="col s12 14 offset-12">
-                        <h5>Connect</h5>
-                        <ul>
-                            <li><a href="#" className="grey-text text-lighten-3">Facebook</a></li>
-                            <li><a href="#" className="grey-text text-lighten-3">Twitter</a></li>
-                            <li><a href="#" className="grey-text text-lighten-3">Facebook</a></li>
-                            <li><a href="#" className="grey-text text-lighten-3">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        */

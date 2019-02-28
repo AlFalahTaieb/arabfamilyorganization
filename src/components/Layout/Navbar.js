@@ -24,7 +24,7 @@ class Navbar extends Component {
         return (
             <div className="header">
 
-                <button href="#" className='sidenav-trigger hide-on-med-and-up  blue-grey darken-3 blue-text' data-target='mobile-nav'>
+                <button href="#" className='sidenav-trigger hide-on-med-and-up  blue darken-4 blue-text' data-target='mobile-nav'>
                     <i className="material-icons">menu</i>
                 </button>
                 <nav className="container" >
