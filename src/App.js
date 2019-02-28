@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route,  } from 'react-router-dom'
+
 
 import Layout from './components/Layout/Layout'
 
@@ -24,6 +25,7 @@ class App extends Component {
     return (
 
       <BrowserRouter>
+
         <div className="App">
 
           <Layout>
@@ -37,7 +39,6 @@ class App extends Component {
             <Route exact path="/Page6" component={Page6} />
           </Layout>
         </div>
-
       </BrowserRouter>
 
     )

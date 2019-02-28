@@ -1,20 +1,53 @@
 import React, { Component } from 'react'
-
+import M from "materialize-css/dist/js/materialize.min.js";
+// import "materialize-css/dist/css/materialize.min.css"
 import './Page5.css'
 
 class Page5 extends Component {
+
 
     constructor(props) {
 
 
         super(props)
+        console.log(this.props)
         this.state = {
             register: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551306661/Dashboard/clipboard.png',
 
         }
 
-
     }
+    componentDidMount() {
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let elems = document.querySelector('.collapsible')
+            let instances = M.Collapsible.init(elems);
+            localStorage.setItem('elems', JSON.stringify(elems));
+            console.log('this is '+localStorage.getItem('elems'))
+
+        })
+    }
+    componentDidUpdate() {
+        document.addEventListener('DOMContentLoaded', () => {
+            let elems = document.querySelector('.collapsible')
+            let instances = M.Collapsible.init(elems);
+        })
+    }
+
+    componentWillMount() {
+        document.addEventListener('DOMContentLoaded', () => {
+            let elems = document.querySelector('.collapsible')
+            let instances = M.Collapsible.init(elems);
+        })
+    }
+
+    componentWillUpdate() {
+        document.addEventListener('DOMContentLoaded', () => {
+            let elems = document.querySelector('.collapsible')
+            let instances = M.Collapsible.init(elems);
+        })
+    }
+
 
     render() {
         let heading = 'العضوية'
@@ -53,7 +86,7 @@ class Page5 extends Component {
                     <a> <img src={this.state.register} alt='' /></a>
                     <section className="container section" >
 
-                        <ul class="collapsible popout">
+                        <ul className="collapsible popout">
                             <li class="active">
                                 <div className="collapsible-header"><i className="material-icons">assignment_ind</i>{colaps1}</div>
                                 <div className="collapsible-body"><span>{text1}</span>
