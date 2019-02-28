@@ -28,9 +28,9 @@ class Navbar extends Component {
                     <i className="material-icons">menu</i>
                 </button>
                 <nav className="container" >
-                    <h6 className='hide-on-med-and-up'>
+                    <h4 className='hide-on-med-and-up'>
                         منظمة الأسرة العربية
-            </h6>
+            </h4>
 
                     <ul className="nav-links hide-on-small-only" >
 
