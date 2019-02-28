@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import M from "materialize-css/dist/js/materialize.min.js";
-// import "materialize-css/dist/css/materialize.min.css"
+import "materialize-css/dist/css/materialize.min.css"
 import './Page5.css'
 
 class Page5 extends Component {
@@ -11,45 +11,29 @@ class Page5 extends Component {
 
         super(props)
         console.log(this.props)
+
         this.state = {
             register: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551306661/Dashboard/clipboard.png',
-
         }
 
     }
+
     componentDidMount() {
-
-        document.addEventListener('DOMContentLoaded', () => {
+        // this.initElem()
+      
             let elems = document.querySelector('.collapsible')
-            let instances = M.Collapsible.init(elems);
-            localStorage.setItem('elems', JSON.stringify(elems));
-            console.log('this is '+localStorage.getItem('elems'))
+            let instances = M.Collapsible.init(elems)
 
-        })
-    }
-    componentDidUpdate() {
-        document.addEventListener('DOMContentLoaded', () => {
-            let elems = document.querySelector('.collapsible')
-            let instances = M.Collapsible.init(elems);
-        })
+
+            console.log('WILLMOUNT')
+        
     }
 
-    componentWillMount() {
-        document.addEventListener('DOMContentLoaded', () => {
-            let elems = document.querySelector('.collapsible')
-            let instances = M.Collapsible.init(elems);
-        })
-    }
 
-    componentWillUpdate() {
-        document.addEventListener('DOMContentLoaded', () => {
-            let elems = document.querySelector('.collapsible')
-            let instances = M.Collapsible.init(elems);
-        })
-    }
 
 
     render() {
+
         let heading = 'العضوية'
 
         /*TITLE */

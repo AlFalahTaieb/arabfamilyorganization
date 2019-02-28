@@ -9,12 +9,12 @@ import logo from '../../images/arabfamily.jpg'
 
 class Navbar extends Component {
 
-    componentWillMount() {
+    componentDidMount() {
       
-        document.addEventListener('DOMContentLoaded', function() {
+
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems);
-          });
+     
         
 
     }
