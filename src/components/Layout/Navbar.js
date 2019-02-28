@@ -10,12 +10,13 @@ import logo from '../../images/arabfamily.jpg'
 class Navbar extends Component {
 
     componentDidMount() {
-      
 
-            var elems = document.querySelectorAll('.dropdown-trigger');
-            var instances = M.Dropdown.init(elems);
-     
-        
+        var elems1 = document.querySelectorAll('.sidenav');
+        var instances2 = M.Sidenav.init(elems1);
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+
+
 
     }
 
@@ -23,7 +24,7 @@ class Navbar extends Component {
         return (
             <div className="header">
 
-                <button href="#" className='sidenav-trigger hide-on-med-and-up' data-target='mobile-nav'>
+                <button href="#" className='sidenav-trigger hide-on-med-and-up  blue-grey darken-3 blue-text' data-target='mobile-nav'>
                     <i className="material-icons">menu</i>
                 </button>
                 <nav className="container" >
