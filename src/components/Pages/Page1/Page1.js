@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import Siema from 'siema'
 import './Page1.css'
-
+import M from "materialize-css/dist/js/materialize.min.js";
 
 class Page1 extends Component {
-    // _isMounted = false
+  
     constructor(props) {
-
-
         super(props)
         this.state = {
+
             family1: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family1.jpg',
             family2: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family2.jpg',
             family3: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family3.jpg',
@@ -22,37 +21,30 @@ class Page1 extends Component {
             family10: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family10.jpg',
             family11: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family11.jpg',
             family12: 'https://res.cloudinary.com/drvdkcdnl/image/upload/v1551265411/family12.jpg',
+            data: []
         }
 
 
     }
-    // setInterval(() => {
-    //     carousel.next()
-    // }, 3000)
 
+ 
     async componentDidMount() {
 
-        // _isMounted = true
-        const carousel = await new Siema({
-            selector: '.taieb',
-            easing: 'cubic-bezier(.17,.67,.32,1.34)',
-            perPage: 1,
-            duration: 1500,
-            startIndex: 0,
-            draggable: true,
-            multipleDrag: true,
-            threshold: 20,
-            loop: true,
-            rtl: true,
-        })
+        let elems = document.querySelectorAll('.carousel');
+        let instances = M.Carousel.init(elems, {
+            fullWidth: true,
+            indicators: true
+        });
         setInterval(() => {
-            carousel.next()
-        }, 5000)
+            const elems = document.querySelector('.carousel')
+            var instance = M.Carousel.getInstance(elems);
+            instance.next();
+        }, 6000)
+
     }
 
     render() {
         let heading = 'صور فعالية عرس زايد العربي'
-        let hadf1 = 'رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافيةشهد معالي الشيخ سعيد بن طحنون آل نهيان «عرس زايد العربي الجماعي الأول»، والذي نظمته «منظمة الأسرة العربية»، مساء أمس -السبت- في مركز «إكسبو الشارقة»، بمشاركة 500 عريس وعروس، من أبناء الدول العربية المقيمين على أرض دولة الإمارات العربية المتحدة، والذي يأتي تزامناً مع «عام زايد 2018»، ومئوية الأب المؤسس. كما حضر الحفل الشيخ محمد بن حميد القاسمي، مدير دائرة الإحصاء والتنمية المجتمعية بالشارقة، والدكتور ماجد سعيد النعيمي، رئيس الديوان الأميري بعجمان، وسيف بن محمد المدفع، الرئيس التنفيذي لمركز «إكسبو الشارقة»، ورجل الأعمال عبد الرحيم الزرعوني، وجمال عبيد البح رئيس منظمة الأسرة العربية، وعدد من رجال السلك الدبلوماسي والشخصيات العربية، والفنانين. وشارك في العرس عرسان يمثلون عدداً من البلدان العربية من: مصر، الأردن، فلسطين، اليمن، السودان، جزر القمر، الجزائر، المغرب، ليبيا، العراق، سلطنة عمان، سوريا، بالإضافة لعدد من العرسان من باكستان، وإيران وثلاثة من المواطنين من الإمارات العربية المتحدة. وأكد جمال البح، في كلمة بالعرس، أن «عرس زايد العربي الأول» يمثل علامة مضيئة في سجلات الترابط الأسري، ويؤكد على السلام والتآخي بين الشعوب العربية والصديقة.'
         let hadf2 = `رعاية الأسرة العربية والنهوض بها وتمكينها من القيام بوظائفها الاجتماعية والاقتصادية والتربوية والثقافيةشهد معالي الشيخ سعيد بن طحنون آل نهيان «عرس زايد العربي الجماعي الأول»، والذي نظمته «منظمة الأسرة العربية»، مساء أمس -السبت- في مركز «إكسبو الشارقة»، بمشاركة 500 عريس وعروس، من أبناء الدول العربية المقيمين على أرض دولة الإمارات العربية المتحدة، والذي يأتي تزامناً مع «عام زايد 2018»، ومئوية الأب المؤسس.`
         let hadf3 = `كما حضر الحفل الشيخ محمد بن حميد القاسمي، مدير دائرة الإحصاء والتنمية المجتمعية بالشارقة، والدكتور ماجد سعيد النعيمي، رئيس الديوان الأميري بعجمان، وسيف بن محمد المدفع، الرئيس التنفيذي لمركز «إكسبو الشارقة»، ورجل الأعمال عبد الرحيم الزرعوني، وجمال عبيد البح رئيس منظمة الأسرة العربية، وعدد من رجال السلك الدبلوماسي والشخصيات العربية، والفنانين. `
         let hadf4 = `وشارك في العرس عرسان يمثلون عدداً من البلدان العربية من: مصر، الأردن، فلسطين، اليمن، السودان، جزر القمر، الجزائر، المغرب، ليبيا، العراق، سلطنة عمان، سوريا، بالإضافة لعدد من العرسان من باكستان، وإيران وثلاثة من المواطنين من الإمارات العربية المتحدة. وأكد جمال البح، في كلمة بالعرس، أن «عرس زايد العربي الأول» يمثل علامة مضيئة في سجلات الترابط الأسري، ويؤكد على السلام والتآخي بين الشعوب العربية والصديق`
@@ -63,54 +55,53 @@ class Page1 extends Component {
                 <div class="row">
                     <h1>{heading} </h1>
                     <section className="container section" >
-
-                        <div className='col s6 offset-s6' class='carousel1 taieb'>
+                        <div class="carousel carousel-slider" data-indicators='true'>
                             <a href="#one!" className='carousel-item'>
                                 <img src={this.state.family1} alt='' />
                             </a>
                             <a href="#two!" className='carousel-item'>
-                                <img src={this.state.family2} alt='' />
+                                <img class='fixed-height' src={this.state.family2} alt='' />
 
                             </a>
                             <a href="#three!" className='carousel-item'>
 
-                                <img src={this.state.family3} alt='' />
+                                <img class='fixed-height' src={this.state.family3} alt='' />
                             </a>
                             <a href="#four!" className='carousel-item'>
 
-                                <img src={this.state.family4} alt='' />
+                                <img class='fixed-height' src={this.state.family4} alt='' />
                             </a>
                             <a href="#five!" className='carousel-item'>
 
-                                <img src={this.state.family5} alt='' />
+                                <img class='fixed-height' src={this.state.family5} alt='' />
                             </a>
                             <a href="#six!" className='carousel-item'>
 
-                                <img src={this.state.family6} alt='' />
+                                <img class='fixed-height' src={this.state.family6} alt='' />
                             </a>
                             <a href="#seven!" className='carousel-item'>
 
-                                <img src={this.state.family7} alt='' />
+                                <img class='fixed-height' src={this.state.family7} alt='' />
                             </a>
                             <a href="#eight!" className='carousel-item'>
 
-                                <img src={this.state.family8} alt='' />
+                                <img class='fixed-height' src={this.state.family8} alt='' />
                             </a>
                             <a href="#nine!" className='carousel-item'>
 
-                                <img src={this.state.family9} alt='' />
+                                <img class='fixed-height' src={this.state.family9} alt='' />
                             </a>
                             <a href="#ten!" className='carousel-item'>
 
-                                <img src={this.state.family10} alt='' />
+                                <img class='fixed-height' src={this.state.family10} alt='' />
                             </a>
                             <a href="#twelve!" className='carousel-item'>
 
-                                <img src={this.state.family11} alt='' />
+                                <img class='fixed-height' src={this.state.family11} alt='' />
                             </a>
                             <a href="#eleven!" className='carousel-item'>
 
-                                <img src={this.state.family12} alt='' />
+                                <img class='fixed-height' src={this.state.family12} alt='' />
                             </a>
 
 
@@ -126,8 +117,6 @@ class Page1 extends Component {
 
                         </div>
                     </section>
-
-
 
                 </div>
 

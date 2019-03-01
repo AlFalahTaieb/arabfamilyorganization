@@ -53,7 +53,6 @@ constructor(props){
                     <Link to='/' className="nav-item">الفعاليات</Link> */}
                         <Link to='/page4' className="nav-item">اهدافها</Link>
                         <Link to='/page5' className="nav-item">العضوية</Link>
-                        <Link to='/test' className="nav-item">TestCarousel</Link>
                         {/* <a class='dropdown-trigger' href='#' data-target='dropdown1'>العضوية</a> */}
                         {/* <ul id='dropdown1' class='dropdown-content'>
                         <li> <Link to='/page1' className="nav-item">حول العضوية </Link></li>
