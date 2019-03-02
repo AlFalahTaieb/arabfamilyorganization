@@ -1,5 +1,5 @@
 .carousel{
-    width:700px;
+    width:700px !important;
 }
 .indicators{
     color: red
